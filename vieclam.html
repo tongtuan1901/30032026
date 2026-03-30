@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tìm việc</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#f5f7fb;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#4f46e5,#06b6d4);
+  color:white;
+  padding:12px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
+  z-index:1000;
+}
+
+/* NAV */
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:10px;
+}
+
+nav li{
+  position:relative;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:999px;
+  display:block;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+/* dropdown */
+nav ul ul{
+  position:absolute;
+  top:120%;
+  left:0;
+  background:white;
+  border-radius:12px;
+  min-width:220px;
+  padding:8px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:0.3s;
+  z-index:9999;
+}
+
+nav ul ul a{
+  color:#1f2937;
+  padding:10px 16px;
+}
+
+nav ul ul a:hover{
+  background:#f1f5f9;
+  padding-left:20px;
+}
+
+nav li:hover > ul{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* NAV */
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:10px;
+}
+
+nav li{
+  position:relative;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:999px;
+  display:block;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+/* dropdown */
+nav ul ul{
+  position:absolute;
+  top:120%;
+  left:0;
+  background:white;
+  border-radius:12px;
+  min-width:220px;
+  padding:8px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:0.3s;
+  z-index:9999;
+}
+
+nav ul ul a{
+  color:#1f2937;
+  padding:10px 16px;
+}
+
+nav ul ul a:hover{
+  background:#f1f5f9;
+  padding-left:20px;
+}
+
+nav li:hover > ul{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+nav ul{display:flex;list-style:none;margin:0;padding:0;gap:10px}
+nav li{position:relative}
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:999px;
+}
+nav a:hover{background:rgba(255,255,255,0.15)}
+
+/* SEARCH */
+.search-box{
+  max-width:900px;
+  margin:30px auto;
+  display:flex;
+  gap:10px;
+}
+
+.search-box input{
+  flex:1;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+.search-box button{
+  padding:12px 20px;
+  background:#4f46e5;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* JOB LIST */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:0 20px 40px;
+}
+
+.job{
+  background:white;
+  padding:20px;
+  border-radius:16px;
+  margin-bottom:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.job:hover{
+  transform:translateY(-5px);
+}
+
+.job h3{
+  margin:0;
+  color:#111827;
+}
+
+.company{
+  color:#6b7280;
+  font-size:14px;
+  margin:5px 0;
+}
+
+.salary{
+  color:#16a34a;
+  font-weight:bold;
+  margin:5px 0;
+}
+
+.job button{
+  margin-top:10px;
+  padding:8px 14px;
+  background:#06b6d4;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.job button:hover{
+  background:#0891b2;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"><img src="logo.jpg" alt="EduHub Logo" style="height:60px;border-radius:50%"></div>
+ <nav>
+<ul>
+<li><a href="index.html">Trang chủ</a></li>
+
+<li>
+<a href="#">Diễn đàn học thuật</a>
+<ul>
+<li><a href="traodoi.html">Trao đổi học thuật</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Thư viện số</a>
+<ul>
+<li><a href="tailieu.html">Tài liệu ôn thi</a></li>
+<li><a href="vanban.html">Văn bản luật (NEW)</a></li>
+<li><a href="hoclieu.html">Tài liệu học tập</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Tư vấn pháp lý</a>
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=61559656559400" target="_blank">Tư vấn (Fanpage)</a></li>
+<li><a href="lichgiang.html">Đăng ký lịch giảng</a></li>
+</ul>
+</li>
+
+<li><a href="vieclam.html">Tìm việc</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- SEARCH -->
+<div class="search-box">
+<input type="text" id="search" placeholder="Tìm kiếm công việc...">
+<button onclick="searchJob()">Tìm</button>
+</div>
+
+<!-- JOB LIST -->
+<div class="container" id="jobList">
+
+<div class="job">
+<h3>Pháp chế doanh nghiệp</h3>
+<div class="company">Công ty ABC</div>
+<div class="salary">150k/buổi</div>
+<button>Ứng tuyển</button>
+</div>
+
+<div class="job">
+<h3>Tư vấn Pháp Lý</h3>
+<div class="company">Studio XYZ</div>
+<div class="salary">300k/buổi</div>
+<button>Ứng tuyển</button>
+</div>
+
+<div class="job">
+<h3>Trợ lý công chứng viên</h3>
+<div class="company">Trung tâm học tập</div>
+<div class="salary">200k/buổi</div>
+<button>Ứng tuyển</button>
+</div>
+
+</div>
+
+<script>
+function searchJob(){
+  let keyword = document.getElementById("search").value.toLowerCase();
+  let jobs = document.querySelectorAll(".job");
+
+  jobs.forEach(job => {
+    let text = job.innerText.toLowerCase();
+    job.style.display = text.includes(keyword) ? "block" : "none";
+  });
+}
+</script>
+<script lang="javascript">var __vnp = {code : 23475,key:'', secret : '0c873798f9cbd575da20e2f7bf003366'};(function() {var ga = document.createElement('script');ga.type = 'text/javascript';ga.async=true; ga.defer=true;ga.src = '//core.vchat.vn/code/tracking.js?v=29591'; var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>
+
+</body>
+</html>
